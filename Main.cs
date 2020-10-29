@@ -29,9 +29,9 @@ namespace TestPlugin
             MelonLogger.Msg("OnApplicationQuit");
         }
 
-        public override void OnPreferencesApplied() // Runs when Melon Preferences get saved.
+        public override void OnPreferencesSaved() // Runs when Melon Preferences get saved to file.
         {
-            MelonLogger.Msg("OnPreferencesApplied");
+            MelonLogger.Msg("OnPreferencesSaved");
         }
     }
 }
