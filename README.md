@@ -1,6 +1,6 @@
 ### GENERAL INFORMATION:
 
-- An Example of a Plugin for [MelonLoader](https://github.com/LavaGang/MelonLoader).
+- An Example Plugin for [MelonLoader](https://github.com/LavaGang/MelonLoader).
 
 ---
 
