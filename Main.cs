@@ -24,14 +24,34 @@ namespace TestPlugin
             MelonLogger.Msg("OnApplicationStart");
         }
 
+        public override void OnUpdate() // Runs once per frame.
+        {
+            MelonLogger.Msg("OnUpdate");
+        }
+
+        public override void OnLateUpdate() // Runs once per frame after OnUpdate and OnFixedUpdate have finished.
+        {
+            MelonLogger.Msg("OnLateUpdate");
+        }
+
+        public override void OnGUI() // Can run multiple times per frame. Mostly used for Unity's IMGUI.
+        {
+            MelonLogger.Msg("OnGUI");
+        }
+
         public override void OnApplicationQuit() // Runs when the Game is told to Close.
         {
             MelonLogger.Msg("OnApplicationQuit");
         }
 
-        public override void OnPreferencesSaved() // Runs when Melon Preferences get saved to file.
+        public override void OnPreferencesSaved() // Runs when Melon Preferences get saved.
         {
             MelonLogger.Msg("OnPreferencesSaved");
+        }
+
+        public override void OnPreferencesLoaded() // Runs when Melon Preferences get loaded.
+        {
+            MelonLogger.Msg("OnPreferencesLoaded");
         }
     }
 }
