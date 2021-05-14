@@ -19,9 +19,19 @@ namespace TestPlugin
             MelonLogger.Msg("OnPreInitialization");
         }
 
+        public override void OnApplicationEarlyStart() // Runs after Game Initialization, before OnApplicationStart and (on Il2Cpp games) before Unhollower.
+        {
+            MelonLogger.Msg("OnApplicationEarlyStart");
+        }
+
         public override void OnApplicationStart() // Runs after Game Initialization.
         {
             MelonLogger.Msg("OnApplicationStart");
+        }
+
+        public override void OnApplicationLateStart() // Runs after OnApplicationStart.
+        {
+            MelonLogger.Msg("OnApplicationLateStart");
         }
 
         public override void OnUpdate() // Runs once per frame.
