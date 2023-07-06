@@ -24,14 +24,14 @@ namespace TestPlugin
             MelonLogger.Msg("OnApplicationEarlyStart");
         }
 
-        public override void OnApplicationStart() // Runs after Game Initialization.
+        public override void OnInitializeMelon() // Runs after Game Initialization.
         {
-            MelonLogger.Msg("OnApplicationStart");
+            MelonLogger.Msg("OnInitializeMelon / OnApplicationStart");
         }
 
-        public override void OnApplicationLateStart() // Runs after OnApplicationStart.
+        public override void OnLateInitializeMelon() // Runs after OnApplicationStart.
         {
-            MelonLogger.Msg("OnApplicationLateStart");
+            MelonLogger.Msg("OnLateInitializeMelon / OnApplicationLateStart");
         }
 
         public override void OnUpdate() // Runs once per frame.
